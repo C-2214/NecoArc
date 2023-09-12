@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій веб-сайт</title>
+    <style>
+        body {
+            background-image: url('image/background1.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: Arial, sans-serif;
+            color: #E1C4FF;
+        }
+        
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            border-radius: 100px;
+			text-align: center;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 100px;
+            margin: 10px;
+            text-align: center;
+        }
+		
+		h1 {
+            text-align: center;
+			color: #c4afed;
+		}
+        
+		p1 {
+            text-align: right;
+			font-family:'Times New Roman', serif;
+        }
+		.photos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .photos a {
+            margin: 10px;
+        }
+        .photos img {
+            width: 20%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+			border-radius: 100px;
+        }
+        .text-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+        .music-container {
+            display: center;
+            justify-content: space-between; center
+            align-items: center;
+		}
+        .music-player {
+            width: 17%;
+            border-radius: 12px;
+        } 
+	</style>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Web-Site</h1>
+    </header>
+
+    <nav>
+        <ul>   
+            <p>Мене звати Владислав і я захоплююсь аніме та відеоіграми.</p>
+			<img src="image/133.jpg">
+		</ul>
+    </nav>
+
+    <div class="content">
+        <section>
+            <h1>Перед вами перелік моїх улюблених аніме.</h1>
+            <div class="photos">
+                <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist:_Brotherhood" target="_blank"><img src="image/fullmetal.jpg" alt="Фотографія 1"></a>
+                <a href="https://en.wikipedia.org/wiki/Samurai_Champloo" target="_blank"><img src="image/samurai.jpg" alt="Фотографія 2"></a>
+                <a href="https://azumanga.fandom.com/wiki/Azumanga_Daioh_Yotsuba%26!_Wiki" target="_blank"><img src="image/azumanga.jpg" alt="Фотографія 3"></a>           
+			</div>
+        </section>
+        <aside>
+            <h2>Моя улюблена гра - це DOTA 2</h2>
+            <p>З Dotoю я познайомився ще в 9 класі, відтоді коли маю вільну хвилину,заходжу в неї, щоб пофармити кріпів або пікнути сфа на фп і злити мід.</p>
+            <img src="image/sf.gif" alt="Іду з міда 0/13/2">
+			<h2>Йду на мід ( Ні слова про матусь опонентів, бо це вважається кібербулінгом)</h2>
+		
+            
+        </aside>
+    </div>
+
+    <footer>
+        <h2>Улюблена музика</h2>
+		<aside>
+	<div class="music-container">
+                <iframe class="music-player" src="https://open.spotify.com/embed/track/0A6PfIp2V8Z5L8rqKUpDvG?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe class="music-player" src="https://open.spotify.com/embed/track/2YnvR7uhlWpPdYUn1eR25y?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe class="music-player" src="https://open.spotify.com/embed/track/6ZOBP3NvffbU4SZcrnt1k6?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<iframe class="music-player" src="https://open.spotify.com/embed/track/60a0Rd6pjrkxjPbaKzXjfq?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<iframe class="music-player" src="https://open.spotify.com/embed/track/64BbK9SFKH2jk86U3dGj2P?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			</div>
+	</aside>
+	</footer>
+	
+</body>
+</html>
