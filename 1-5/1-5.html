@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація на сайт знайомств</title>
+    <style>
+        body {
+            background-image: url('PictureFor1-5.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        label, select, input[type="radio"], input[type="date"], input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анкета на працевлаштування в Microsoft Office</h1>
+    <form action="/redirect-page.html" method="post">
+        <label for="colorPreference">Чи полюбляєте ви ходити з кольоровим прапором?</label>
+        <select id="colorPreference" name="colorPreference">
+            <option value="yes">Так</option>
+            <option value="no">Ні</option>
+        </select>
+
+        <label for="gender">Гендер:</label>
+        <select id="gender" name="gender">
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Бойовий Гвинтокрил</option>
+        </select>
+
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="email">Адреса електронної пошти:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
