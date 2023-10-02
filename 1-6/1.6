@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Розклад С-22</title>
+    <style>
+        body {
+            background-image: url('photos/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            padding: 10px;
+        }
+
+        #header img {
+            width: 260px;
+            height: 280px;
+            float: left;
+        }
+
+        #left-image {
+            position: absolute;
+            bottom: 0; 
+            left: 10px;
+            transform: translateY(0%);
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #left-image img {
+            width: 250px;
+            height: 250px;
+        }
+
+        #right-image {
+            position: absolute;
+            bottom: 0; 
+            right: 10px;
+            transform: translateY(0%);
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #right-image img {
+            width: 250px;
+            height: 250px;
+        }
+
+        table {
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+
+        #registration-form {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            background-color: #f2f2f2;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #registration-form h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        #registration-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #registration-form input[type="text"],
+        #registration-form input[type="email"],
+        #registration-form input[type="password"] {
+            width: 100%;
+            padding: 4px;
+            margin-bottom: 10px;
+            border: 3px solid #ccc;
+            border-radius: 3px;
+        }
+
+        #registration-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #registration-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="photos/neco-arc-taunt.gif" alt="неко арк">
+    </div>
+
+
+    <div id="left-image">
+        <img src="photos/1.gif" alt="Фотографія зліва знизу">
+    </div>
+
+    <div id="right-image">
+        <img src="photos/2.gif" alt="Фотографія справа знизу">
+    </div>
+    
+    <table border="1">
+        <tr>
+            <tr>
+                <th>Час</th>
+                <th>Пара</th>
+                <th>Понеділок</th>
+                <th>Вівторок</th>
+                <th>Середа</th>
+                <th>Четвер</th>
+                <th>П'ятниця</th>
+                <th>Субота</th> 
+            </tr>
+            <tr>
+                <td>
+                    <p>8:30-9:15</p>
+                    <p>9:20-10:05</p>
+                </td>
+                <td>1</td>
+                <td>ФВ</td>
+                <td>ФВ</td>
+                <td>ТІМ</td>
+                <td>ТС</td>
+                <td>ФВ</td>
+                <td>СР</td> 
+            </tr>
+            <tr>
+                <td>
+                    <p>10:25-11:10</p>
+                    <p>11:15-12:00</p>
+                </td>
+                <td>2</td>
+                <td>Право</td>
+                <td>ТІМ</td>
+                <td>СР</td>
+                <td>ТС</td>
+                <td>Право</td>
+                <td>СР</td> 
+            </tr>
+            <tr>
+                <td>
+                    <p>12:20-13:05</p>
+                    <p>13:10-13:55</p>
+                </td>
+                <td>3</td>
+                <td>Іноземна мова</td>
+                <td>СР</td>
+                <td>Іноземна мова</td>
+                <td>ТІМ</td>
+                <td>ТІК</td>
+                <td>СР</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>16:10-16:55</p>
+                    <p>17:50-17:45</p>
+                </td>
+                <td>4</td>
+                <td>Програмування</td>
+                <td>СР</td>
+                <td>СР</td>
+                <td>СР</td>
+                <td>СР</td>
+                <td></td> 
+            </tr>
+        </table>
+        
+        <div id="registration-form">
+        <h2>Реєстрація</h2>
+        <form action="process_registration.php" method="post">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" required><br>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirm-password">Підтвердження пароля:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required><br>
+
+            <input type="submit" value="Зареєструватися">
+        </form>
+    </div>
+</body>
+</html>
