@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  color: #0000FF; 
+  text-align: center; 
+  line-height: 1.5; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+.font-formatting li {
+  font-family: Arial, sans-serif; 
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+.text-formatting li {
+  color: #0000FF; 
+  text-align: center; 
+  line-height: 1.5; 
+}
+
+
+.spacing li {
+  padding: 20px; 
+  margin: 10px;
+}
+
+.border {
+  border: 2px dotted #EE0000; 
+  border-radius: 10px; 
+}
