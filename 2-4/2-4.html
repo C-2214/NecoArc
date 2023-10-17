@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+        }
+        .news {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+            max-width: 300px; /* Задаємо максимальну ширину */
+            margin-right: 20px; /* Додаємо відступ праворуч */
+        }
+        .news h2 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+        .news ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .news ul li {
+            margin-bottom: 10px;
+        }
+        .form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            flex: 2;
+        }
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form input[type="text"],
+        .form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .table {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>My Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="news">
+            <h2>News</h2>
+            <ul>
+                <li><a href="#">News 1</a></li>
+                <li><a href="#">News 2</a></li>
+                <li><a href="#">News From</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="table">
+        <h2>Table with Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Вік</th>
+                    <th>Місто</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Іван</td>
+                    <td>25</td>
+                    <td>Київ</td>
+                </tr>
+                <tr>
+                    <td>Марія</td>
+                    <td>30</td>
+                    <td>Львів</td>
+                </tr>
+                <tr>
+                    <td>Петро</td>
+                    <td>22</td>
+                    <td>Одеса</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
