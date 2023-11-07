@@ -1,0 +1,82 @@
+.horizontal-navigation {
+    background-color: #8e44ad; 
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8e44ad; 
+    display: flex;
+}
+
+.horizontal-navigation li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.horizontal-navigation li a {
+    display: flex;
+    align-items: center;
+    color: #ffffff; 
+    text-align: center;
+    padding: 14px 30px; 
+    border-radius: 25px; 
+    text-decoration: none;
+    position: relative;
+}
+
+.horizontal-navigation a:hover {
+    text-decoration: underline;
+    background-color: #ffffff; 
+    color: #8e44ad; 
+}
+
+.horizontal-navigation li a::before {
+    content: '\2717'; 
+    font-size: 20px;
+    color: #8e44ad; 
+    margin-right: 10px;
+}
+
+.vertical-navigation {
+    background-color: #ecf0f1; 
+    width: 200px;
+}
+
+.vertical-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ecf0f1; 
+}
+
+.vertical-navigation li a:hover {
+    background-color: #ffffff; 
+    color: #8e44ad; 
+}
+
+.vertical-navigation li {
+    position: relative;
+}
+
+.vertical-navigation li a {
+    display: flex;
+    align-items: center;
+    color: #8e44ad; 
+    padding: 14px 30px; 
+    border-radius: 25px; 
+    text-decoration: none;
+    position: relative;
+}
+
+.vertical-navigation li a::before {
+    content: '\2717'; 
+    font-size: 20px;
+    color: #8e44ad; 
+    margin-right: 10px;
+}
