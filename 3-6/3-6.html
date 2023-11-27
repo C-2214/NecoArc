@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сторінка з кнопкою, текстовим полем та обробниками подій</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #myButton {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #myButton:hover {
+      background-color: #45a049;
+    }
+
+    #myInput {
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<button id="myButton">Натисни мене</button>
+<input type="text" id="myInput" placeholder="Введіть текст">
+
+<script>
+  var myButton = document.getElementById('myButton');
+  var myInput = document.getElementById('myInput');
+
+  // Перший обробник події для кнопки
+  function firstButtonClickHandler() {
+    alert('Кнопка була натиснута!');
+  }
+
+  // Другий обробник події для кнопки
+  function secondButtonClickHandler() {
+    console.log('ЩЦе один обробник події!');
+  }
+
+  // Додаємо перший обробник події для кліку на кнопку
+  myButton.addEventListener('click', firstButtonClickHandler);
+
+  // Додаємо другий обробник події для кліку на кнопку
+  myButton.addEventListener('click', secondButtonClickHandler);
+
+  // Додаємо обробник події для натискання клавіш у текстовому полі
+  myInput.addEventListener('keydown', function() {
+    console.log('Клавіша була натиснута!');
+  });
+
+  // Додаємо обробник події для втрати фокусу текстовим полем
+  myInput.addEventListener('blur', function() {
+    console.log('Елемент втратив фокус');
+  });
+
+  // Додаємо обробник події для завантаження всього документа
+  window.addEventListener('load', function() {
+    console.log('Документ повністю завантажено!');
+  });
+</script>
+
+</body>
+</html>
